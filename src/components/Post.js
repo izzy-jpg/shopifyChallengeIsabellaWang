@@ -24,9 +24,8 @@ function Post(props) {
               </div>
               {/* /imageContainer */}
               <div className="textContainer">
-                <h2>{image.title} by {image.copyright}</h2>
+                <h2>{image.title}</h2>
                 <p>{image.date}</p>
-                <p>{image.explanation}</p>
                 <button onClick={toggleLike} aria-label='Click to like this image'>
                   <i className="fas fa-heart like"></i>
                 </button>

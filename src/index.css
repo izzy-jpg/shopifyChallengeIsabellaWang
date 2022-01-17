@@ -3,8 +3,6 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
 
 *, *:before, *:after {box-sizing: inherit}
-
-.srOnly { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 /* end of setup */
 
 
@@ -38,6 +36,8 @@ h1{
 
 h2{
   font-size: 3rem;
+  margin-bottom: 0;
+  text-align: center;
 }
 
 p{
@@ -62,16 +62,24 @@ button{
 
 button:hover{
   transform: scale(1.2);
+  text-shadow: 1px 1px 15px white;
 }
 
 i{
   transition: all 0.7s ease;
 }
 
+.wrapper {
+  max-width: 2000px;
+  width: 85%;
+  margin: 0 auto;
+}
+
 .postContainer{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 75%;
   margin: 5% auto;
   background-color: rgb(65, 65, 65);
@@ -80,6 +88,14 @@ i{
 
 .imageContainer{
   width: 100%;
+}
+
+.textContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .like{
@@ -105,6 +121,7 @@ i{
   height: 100%;
   width: 100%;
 }
+
 .ring {
   fill: none;
   stroke: #dd361c;
@@ -121,3 +138,25 @@ i{
     transform: rotate(360deg);
   }
 }
+
+
+
+
+
+
+
+
+
+/* media queries */
+@media (max-width: 650px) {
+  .postContainer{
+    width: 90%;
+  }
+}
+
+@media (max-width: 450px) {
+  h1{
+    font-size: 4rem;
+  }
+}
+

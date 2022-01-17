@@ -18,7 +18,7 @@ function App() {
       responseType: 'json',
       params: {
         start_date: '2022-01-02',
-        end_date: '2022-01-15',
+        end_date: '2022-01-08',
         api_key: 'X4WfjYooUbriBSQODcWwLkcOgGZuUlO2JrirMCZN'
       }
     })
@@ -33,7 +33,7 @@ function App() {
   return (
     <div className="App">
       <>
-        <header>
+        <header className="wrapper">
           <h1>Spacestagram</h1>
           <p>Brought to you by NASA's Astrononmy Photo of the Day (APOD) API</p>
         </header>
